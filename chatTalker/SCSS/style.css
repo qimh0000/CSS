@@ -1,0 +1,828 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.wrap a {
+  text-decoration: none;
+}
+
+.wrap p, .wrap h1, .wrap h2, .wrap h3 {
+  color: #221E1F;
+}
+
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  margin-bottom: 100px;
+}
+
+.header .container {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 64%;
+  width: auto;
+}
+
+.header .container .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header .container .header-content img {
+  width: 50%;
+}
+
+.header .container .header-content a {
+  background: #FF5D50;
+}
+
+.header .container .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header .container .banner-text h3 {
+  color: #56C4C5;
+  font-size: 18px;
+  padding-bottom: 16px;
+  font-weight: bold;
+}
+
+.header .container .banner-text h1 {
+  font-size: 48px;
+  padding-bottom: 16px;
+  font-weight: bold;
+}
+
+.header .container .banner-text h2 {
+  font-size: 20px;
+}
+
+.header .container .banner-photo {
+  width: 46%;
+}
+
+.contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contain .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contain .sns h2 {
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 48px;
+  text-align: center;
+}
+
+.contain .sns-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contain .sns-item ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contain .sns-item ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+}
+
+.contain .sns-item ul li img {
+  height: 90px;
+  margin-bottom: 24px;
+}
+
+.contain .sns-item ul li h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.contain .sns-item ul li p {
+  width: 240px;
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-align: center;
+  color: #747474;
+}
+
+.contain .char {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contain .char h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contain .char p {
+  font-size: 20px;
+  text-align: center;
+  color: #221E1F;
+  line-height: 25px;
+}
+
+.contain .char .char-card ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 48px;
+  margin-bottom: 100px;
+  gap: 20px;
+}
+
+.contain .char .char-card ul li {
+  width: 250px;
+  height: 388px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 24px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+}
+
+.contain .char .char-card ul li h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #56C4C5;
+  margin-bottom: 16px;
+}
+
+.contain .char .char-card ul li p {
+  font-size: 16px;
+  padding-bottom: 8px;
+  line-height: 15px;
+}
+
+.contain .char .char-card ul .activity {
+  background: transparent url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ch01.svg) 0% 0% no-repeat padding-box;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.contain .char .char-card ul .creator {
+  background: transparent url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ch02.svg) 0% 0% no-repeat padding-box;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.contain .char .char-card ul .brand {
+  background: transparent url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ch03.svg) 0% 0% no-repeat padding-box;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.contain .char .char-card ul .other {
+  background: transparent url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ch04.svg) 0% 0% no-repeat padding-box;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.contain .botFunction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contain .botFunction .function ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 507px;
+  gap: 28px;
+}
+
+.contain .botFunction .function ul li {
+  max-width: 230px;
+  max-height: 280px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.contain .botFunction .function ul li .iconBG {
+  width: 86px;
+  height: 86px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contain .botFunction .function ul li h3 {
+  font-size: 18px;
+  color: #221E1F;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-top: 24px;
+}
+
+.contain .botFunction .function ul li p {
+  font-size: 16px;
+  color: #221E1F;
+  width: 166px;
+  margin-bottom: 8px;
+}
+
+.contain .botFunction .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contain .botFunction .text .title {
+  margin-bottom: 20px;
+}
+
+.contain .botFunction .text .title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.contain .botFunction .text .content {
+  margin-bottom: 20px;
+}
+
+.contain .botFunction .text .content p {
+  max-width: 395px;
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-align: left;
+  color: #747474;
+}
+
+.contain .botFunction .text a {
+  margin-bottom: 100px;
+}
+
+.contain .comment {
+  margin-top: 100px;
+}
+
+.contain .comment h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #221E1F;
+  text-align: center;
+  margin-bottom: 104px;
+}
+
+.contain .comment .comment-item ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.contain .comment .comment-item ul li {
+  position: relative;
+  max-width: 352px;
+  padding: 48px 32px 24px 32px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+}
+
+.contain .comment .comment-item ul li .photo {
+  position: absolute;
+  top: -50px;
+  max-width: 80px;
+  max-height: 80px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.contain .comment .comment-item ul li .photo img {
+  width: 80px;
+  height: 80px;
+}
+
+.contain .comment .comment-item ul li .coment-text {
+  max-width: 288px;
+  line-height: 24px;
+  color: #221E1F;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #8d8d8d2d;
+}
+
+.contain .comment .comment-item ul li .grade {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contain .comment .comment-item ul li .grade .name {
+  font-size: 16px;
+}
+
+.contain .comment .comment-item ul li .grade .name h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.contain .comment .comment-item ul li .grade .star {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contain .comment .comment-item ul li .grade .star img {
+  max-width: 16.78px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.contain .pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 24px;
+}
+
+.contain .pages .dot {
+  width: 10px;
+  height: 10px;
+  background: #DDDDDD 0% 0% no-repeat padding-box;
+  border-radius: 50px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.contain .pages .dotLong {
+  width: 16px;
+  height: 10px;
+  background: #FFD153 0% 0% no-repeat padding-box;
+  border-radius: 50px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.button {
+  max-width: 136px;
+  border-radius: 27px;
+  background: #56C4C5;
+  padding: 12px 32px;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.footer {
+  background: #F5F5F5;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.footer .footer-box {
+  background: #FFFFFF;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 650px;
+  width: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer .footer-box .footer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 112px;
+}
+
+.footer .footer-box .footer-item h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+
+.footer p {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media (max-width: 989px) {
+  .header {
+    margin-bottom: 32px;
+  }
+  .header .container {
+    background-image: url(#);
+  }
+  .header .container .header-content {
+    border-bottom: 5px solid #F6CB52;
+    margin-bottom: 32px;
+  }
+  .header .container .banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 100%;
+  }
+  .header .container .banner-text {
+    padding-bottom: 34px;
+  }
+  .header .container .banner-photo {
+    width: 100%;
+  }
+  .char .char-card ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contain .botFunction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contain .botFunction .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contain .botFunction .text .title h2 {
+    text-align: center;
+  }
+  .contain .botFunction .text .content p {
+    text-align: center;
+  }
+  .contain .comment .comment-item ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .header .container {
+    background-image: url(#);
+  }
+  .header .container .header-content {
+    border-bottom: 5px solid #F6CB52;
+  }
+  .header .container .banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 100%;
+  }
+  .header .container .banner-photo {
+    width: 100%;
+  }
+  .char .char-card ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contain .botFunction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contain .botFunction .function ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 507px;
+    gap: 28px;
+  }
+  .contain .botFunction .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contain .botFunction .text .title h2 {
+    text-align: center;
+  }
+  .contain .botFunction .text .content p {
+    text-align: center;
+  }
+  .contain .comment .comment-item ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
